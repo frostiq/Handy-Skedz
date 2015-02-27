@@ -26,7 +26,12 @@ namespace JackstimetableService.Models
         {
         } 
 
-        public DbSet<UserDto> TodoItems { get; set; }
+        public DbSet<UserDto> Users { get; set; }
+
+        public DbSet<SchoolDto> Schools { get; set; }
+
+        public DbSet<ScheduleDto> Schedules { get; set; }
+
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {

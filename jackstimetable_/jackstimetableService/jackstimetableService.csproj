@@ -188,6 +188,7 @@
   <ItemGroup>
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="DataObjects\LocationDto.cs" />
+    <Compile Include="DataObjects\ScheduleDto.cs" />
     <Compile Include="DataObjects\SchoolDto.cs" />
     <Compile Include="DataObjects\SchoolTypeDto.cs" />
     <Compile Include="DataObjects\StudyGroupDto.cs" />
@@ -203,6 +204,14 @@
     <Compile Include="Migrations\201502271759532_Basic models added.cs" />
     <Compile Include="Migrations\201502271759532_Basic models added.Designer.cs">
       <DependentUpon>201502271759532_Basic models added.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201502271805505_Schedule added.cs" />
+    <Compile Include="Migrations\201502271805505_Schedule added.Designer.cs">
+      <DependentUpon>201502271805505_Schedule added.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201502271808485_DbContext changed.cs" />
+    <Compile Include="Migrations\201502271808485_DbContext changed.Designer.cs">
+      <DependentUpon>201502271808485_DbContext changed.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\JackstimetableContext.cs" />
@@ -236,6 +245,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201502271759532_Basic models added.resx">
       <DependentUpon>201502271759532_Basic models added.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201502271805505_Schedule added.resx">
+      <DependentUpon>201502271805505_Schedule added.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201502271808485_DbContext changed.resx">
+      <DependentUpon>201502271808485_DbContext changed.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
