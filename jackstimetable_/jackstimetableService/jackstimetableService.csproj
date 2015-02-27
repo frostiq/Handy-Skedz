@@ -183,10 +183,10 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Controllers\" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\WebApiConfig.cs" />
+    <Compile Include="Controllers\UsersController.cs" />
     <Compile Include="DataObjects\LocationDto.cs" />
     <Compile Include="DataObjects\ScheduleDto.cs" />
     <Compile Include="DataObjects\SchoolDto.cs" />
