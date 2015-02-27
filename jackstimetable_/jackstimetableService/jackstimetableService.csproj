@@ -187,6 +187,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\WebApiConfig.cs" />
+    <Compile Include="DataObjects\LocationDto.cs" />
+    <Compile Include="DataObjects\SchoolDto.cs" />
+    <Compile Include="DataObjects\SchoolTypeDto.cs" />
+    <Compile Include="DataObjects\StudyGroupDto.cs" />
     <Compile Include="DataObjects\UserDto.cs" />
     <Compile Include="Migrations\201502261908502_Initial.cs" />
     <Compile Include="Migrations\201502261908502_Initial.Designer.cs">
@@ -195,6 +199,10 @@
     <Compile Include="Migrations\201502271225370_UserDto added.cs" />
     <Compile Include="Migrations\201502271225370_UserDto added.Designer.cs">
       <DependentUpon>201502271225370_UserDto added.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201502271759532_Basic models added.cs" />
+    <Compile Include="Migrations\201502271759532_Basic models added.Designer.cs">
+      <DependentUpon>201502271759532_Basic models added.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\JackstimetableContext.cs" />
@@ -225,6 +233,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201502271225370_UserDto added.resx">
       <DependentUpon>201502271225370_UserDto added.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201502271759532_Basic models added.resx">
+      <DependentUpon>201502271759532_Basic models added.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />

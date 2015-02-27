@@ -1,4 +1,5 @@
-﻿using System.ComponentModel.DataAnnotations.Schema;
+﻿using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations.Schema;
 using Microsoft.WindowsAzure.Mobile.Service;
 
 namespace JackstimetableService.DataObjects
@@ -9,5 +10,9 @@ namespace JackstimetableService.DataObjects
         public string Username { get; set; }
 
         public string FullName { get; set; }
+
+        public LocationDto Location { get; set; }
+
+        public virtual ICollection<StudyGroupDto> StudyGroups { get; set; }
     }
 }
