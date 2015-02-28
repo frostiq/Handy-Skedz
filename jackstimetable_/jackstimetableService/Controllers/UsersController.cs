@@ -3,9 +3,9 @@ using System.Threading.Tasks;
 using System.Web.Http;
 using System.Web.Http.Controllers;
 using System.Web.Http.OData;
-using Microsoft.WindowsAzure.Mobile.Service;
 using JackstimetableService.DataObjects;
 using JackstimetableService.Models;
+using Microsoft.WindowsAzure.Mobile.Service;
 
 namespace JackstimetableService.Controllers
 {
@@ -14,7 +14,7 @@ namespace JackstimetableService.Controllers
         protected override void Initialize(HttpControllerContext controllerContext)
         {
             base.Initialize(controllerContext);
-            JackstimetableContext context = new JackstimetableContext();
+            var context = new JackstimetableContext();
             DomainManager = new EntityDomainManager<UserDto>(context, Request, Services);
         }
 

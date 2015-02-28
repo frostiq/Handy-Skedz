@@ -1,12 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Data.Entity;
+﻿using System.Data.Entity.Migrations;
 using System.Web.Http;
-using JackstimetableService.DataObjects;
-using JackstimetableService.Models;
-using Microsoft.WindowsAzure.Mobile.Service;
-using System.Data.Entity.Migrations;
 using JackstimetableService.Migrations;
+using Microsoft.WindowsAzure.Mobile.Service;
 
 namespace JackstimetableService
 {
@@ -15,7 +10,7 @@ namespace JackstimetableService
         public static void Register()
         {
             // Use this class to set configuration options for your mobile service
-            ConfigOptions options = new ConfigOptions();
+            var options = new ConfigOptions();
 
             // Use this class to set WebAPI configuration options
             HttpConfiguration config = ServiceConfig.Initialize(new ConfigBuilder(options));
@@ -24,10 +19,10 @@ namespace JackstimetableService
             // line. Comment it out again when you deploy your service for production use.
             // config.IncludeErrorDetailPolicy = IncludeErrorDetailPolicy.Always;
             
-            Database.SetInitializer(new ClearDatabaseSchemaAlways<JackstimetableContext>());
+            //Database.SetInitializer(new ClearDatabaseSchemaAlways<JackstimetableContext>());
 
-            //var migrator = new DbMigrator(new Configuration());
-            //migrator.Update();
+            var migrator = new DbMigrator(new Configuration());
+            migrator.Update();
         }
     }
 }

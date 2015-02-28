@@ -2,7 +2,6 @@
 using System.Data.Entity.ModelConfiguration.Conventions;
 using System.Linq;
 using JackstimetableService.DataObjects;
-using JackstimetableService.DataObjects;
 using Microsoft.WindowsAzure.Mobile.Service;
 using Microsoft.WindowsAzure.Mobile.Service.Tables;
 
