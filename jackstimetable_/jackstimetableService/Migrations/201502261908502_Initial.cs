@@ -56,7 +56,7 @@ namespace JackstimetableService.Migrations
                                 },
                             }),
                     })
-                .PrimaryKey(t => t.Id)
+                .PrimaryKey(t => t.Id, null, false)
                 .Index(t => t.CreatedAt, clustered: true);
             
         }

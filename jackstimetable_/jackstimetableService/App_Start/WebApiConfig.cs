@@ -24,10 +24,10 @@ namespace JackstimetableService
             // line. Comment it out again when you deploy your service for production use.
             // config.IncludeErrorDetailPolicy = IncludeErrorDetailPolicy.Always;
             
-            //Database.SetInitializer(new jackstimetableInitializer());
+            Database.SetInitializer(new ClearDatabaseSchemaAlways<JackstimetableContext>());
 
-            var migrator = new DbMigrator(new Configuration());
-            migrator.Update();
+            //var migrator = new DbMigrator(new Configuration());
+            //migrator.Update();
         }
     }
 }
