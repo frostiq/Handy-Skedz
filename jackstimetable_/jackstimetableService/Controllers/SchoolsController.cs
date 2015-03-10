@@ -9,42 +9,42 @@ using JackstimetableService.Models;
 
 namespace JackstimetableService.Controllers
 {
-    public class ScheduleController : TableController<ScheduleDto>
+    public class SchoolsController : TableController<SchoolDto>
     {
         protected override void Initialize(HttpControllerContext controllerContext)
         {
             base.Initialize(controllerContext);
             var context = new JackstimetableContext();
-            DomainManager = new EntityDomainManager<ScheduleDto>(context, Request, Services);
+            DomainManager = new EntityDomainManager<SchoolDto>(context, Request, Services);
         }
 
-        // GET tables/Schedule
-        public IQueryable<ScheduleDto> GetAllScheduleDto()
+        // GET tables/School
+        public IQueryable<SchoolDto> GetAllSchoolDto()
         {
             return Query(); 
         }
 
-        // GET tables/Schedule/48D68C86-6EA6-4C25-AA33-223FC9A27959
-        public SingleResult<ScheduleDto> GetScheduleDto(string id)
+        // GET tables/School/48D68C86-6EA6-4C25-AA33-223FC9A27959
+        public SingleResult<SchoolDto> GetSchoolDto(string id)
         {
             return Lookup(id);
         }
 
-        // PATCH tables/Schedule/48D68C86-6EA6-4C25-AA33-223FC9A27959
-        public Task<ScheduleDto> PatchScheduleDto(string id, Delta<ScheduleDto> patch)
+        // PATCH tables/School/48D68C86-6EA6-4C25-AA33-223FC9A27959
+        public Task<SchoolDto> PatchSchoolDto(string id, Delta<SchoolDto> patch)
         {
              return UpdateAsync(id, patch);
         }
 
-        // POST tables/Schedule
-        public async Task<IHttpActionResult> PostScheduleDto(ScheduleDto item)
+        // POST tables/School
+        public async Task<IHttpActionResult> PostSchoolDto(SchoolDto item)
         {
-            ScheduleDto current = await InsertAsync(item);
+            SchoolDto current = await InsertAsync(item);
             return CreatedAtRoute("Tables", new { id = current.Id }, current);
         }
 
-        // DELETE tables/Schedule/48D68C86-6EA6-4C25-AA33-223FC9A27959
-        public Task DeleteScheduleDto(string id)
+        // DELETE tables/School/48D68C86-6EA6-4C25-AA33-223FC9A27959
+        public Task DeleteSchoolDto(string id)
         {
              return DeleteAsync(id);
         }

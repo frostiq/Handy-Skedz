@@ -31,6 +31,8 @@ namespace JackstimetableService.Models
 
         public DbSet<ScheduleDto> Schedules { get; set; }
 
+        public DbSet<LocationDto> Locations { get; set; }
+
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
@@ -44,6 +46,8 @@ namespace JackstimetableService.Models
                 new AttributeToColumnAnnotationConvention<TableColumnAttribute, string>(
                     "ServiceTableColumn", (property, attributes) => attributes.Single().ColumnType.ToString()));
         }
+
+        public System.Data.Entity.DbSet<JackstimetableService.DataObjects.LocationDto> LocationDtoes { get; set; }
     }
 
 }
