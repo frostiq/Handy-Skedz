@@ -46,8 +46,6 @@ namespace JackstimetableService.Models
                 new AttributeToColumnAnnotationConvention<TableColumnAttribute, string>(
                     "ServiceTableColumn", (property, attributes) => attributes.Single().ColumnType.ToString()));
         }
-
-        public System.Data.Entity.DbSet<JackstimetableService.DataObjects.LocationDto> LocationDtoes { get; set; }
     }
 
 }
