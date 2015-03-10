@@ -188,6 +188,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\WebApiConfig.cs" />
+    <Compile Include="Controllers\ScheduleController.cs" />
+    <Compile Include="Controllers\SchoolController.cs" />
     <Compile Include="Controllers\UsersController.cs" />
     <Compile Include="DataObjects\LocationDto.cs" />
     <Compile Include="DataObjects\ScheduleDto.cs" />
