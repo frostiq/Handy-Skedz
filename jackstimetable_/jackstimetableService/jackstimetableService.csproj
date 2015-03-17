@@ -191,6 +191,8 @@
     <Compile Include="Controllers\LocationsController.cs" />
     <Compile Include="Controllers\SchedulesController.cs" />
     <Compile Include="Controllers\SchoolsController.cs" />
+    <Compile Include="Controllers\SchoolTypeController.cs" />
+    <Compile Include="Controllers\StudyGroupDtoController.cs" />
     <Compile Include="Controllers\UsersController.cs" />
     <Compile Include="DataObjects\LocationDto.cs" />
     <Compile Include="DataObjects\ScheduleDto.cs" />
