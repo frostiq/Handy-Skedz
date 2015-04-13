@@ -31,7 +31,7 @@ namespace JackstimetableService.Models
 
         public DbSet<ScheduleDto> Schedules { get; set; }
 
-        public DbSet<LocationDto> Locations { get; set; }
+        public DbSet<CountryDto> Countries { get; set; }
         
         public DbSet<SchoolTypeDto> SchoolTypes { get; set; }
 

@@ -9,42 +9,42 @@ using JackstimetableService.Models;
 
 namespace JackstimetableService.Controllers
 {
-    public class SchoolTypeController : TableController<SchoolTypeDto>
+    public class CountriesController : TableController<CountryDto>
     {
         protected override void Initialize(HttpControllerContext controllerContext)
         {
             base.Initialize(controllerContext);
             JackstimetableContext context = new JackstimetableContext();
-            DomainManager = new EntityDomainManager<SchoolTypeDto>(context, Request, Services);
+            DomainManager = new EntityDomainManager<CountryDto>(context, Request, Services);
         }
 
-        // GET tables/SchoolType
-        public IQueryable<SchoolTypeDto> GetAllSchoolTypeDto()
+        // GET tables/Country
+        public IQueryable<CountryDto> GetAllCountryDto()
         {
             return Query(); 
         }
 
-        // GET tables/SchoolType/48D68C86-6EA6-4C25-AA33-223FC9A27959
-        public SingleResult<SchoolTypeDto> GetSchoolTypeDto(string id)
+        // GET tables/Country/48D68C86-6EA6-4C25-AA33-223FC9A27959
+        public SingleResult<CountryDto> GetCountryDto(string id)
         {
             return Lookup(id);
         }
 
-        // PATCH tables/SchoolType/48D68C86-6EA6-4C25-AA33-223FC9A27959
-        public Task<SchoolTypeDto> PatchSchoolTypeDto(string id, Delta<SchoolTypeDto> patch)
+        // PATCH tables/Country/48D68C86-6EA6-4C25-AA33-223FC9A27959
+        public Task<CountryDto> PatchCountryDto(string id, Delta<CountryDto> patch)
         {
              return UpdateAsync(id, patch);
         }
 
-        // POST tables/SchoolType
-        public async Task<IHttpActionResult> PostSchoolTypeDto(SchoolTypeDto item)
+        // POST tables/Country
+        public async Task<IHttpActionResult> PostCountryDto(CountryDto item)
         {
-            SchoolTypeDto current = await InsertAsync(item);
+            CountryDto current = await InsertAsync(item);
             return CreatedAtRoute("Tables", new { id = current.Id }, current);
         }
 
-        // DELETE tables/SchoolType/48D68C86-6EA6-4C25-AA33-223FC9A27959
-        public Task DeleteSchoolTypeDto(string id)
+        // DELETE tables/Country/48D68C86-6EA6-4C25-AA33-223FC9A27959
+        public Task DeleteCountryDto(string id)
         {
              return DeleteAsync(id);
         }

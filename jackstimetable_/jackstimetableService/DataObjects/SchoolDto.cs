@@ -10,6 +10,6 @@ namespace JackstimetableService.DataObjects
 
         public SchoolTypeDto SchoolType { get; set; }
 
-        public LocationDto Location { get; set; }
+        public CityDto City { get; set; }
     }
 }

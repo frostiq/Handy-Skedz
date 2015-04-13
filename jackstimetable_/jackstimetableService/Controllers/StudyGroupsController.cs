@@ -9,7 +9,7 @@ using JackstimetableService.Models;
 
 namespace JackstimetableService.Controllers
 {
-    public class StudyGroupDtoController : TableController<StudyGroupDto>
+    public class StudyGroupsController : TableController<StudyGroupDto>
     {
         protected override void Initialize(HttpControllerContext controllerContext)
         {
