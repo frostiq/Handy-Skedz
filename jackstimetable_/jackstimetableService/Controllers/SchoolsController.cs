@@ -21,7 +21,7 @@ namespace JackstimetableService.Controllers
         // GET tables/School
         public IQueryable<SchoolDto> GetAllSchoolDto()
         {
-            return Query().OrderBy(s => s.Name); 
+            return Query(); 
         }
 
         // GET tables/School/48D68C86-6EA6-4C25-AA33-223FC9A27959
