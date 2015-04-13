@@ -21,7 +21,7 @@ namespace JackstimetableService.Controllers
         // GET tables/Country
         public IQueryable<CountryDto> GetAllCountryDto()
         {
-            return Query(); 
+            return Query().OrderBy(c => c.Name); 
         }
 
         // GET tables/Country/48D68C86-6EA6-4C25-AA33-223FC9A27959
