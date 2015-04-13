@@ -12,7 +12,6 @@ namespace JackstimetableService.Migrations
             DropForeignKey("jackstimetable.Schools", "Location_Id", "jackstimetable.Locations");
             DropForeignKey("jackstimetable.Users", "Location_Id", "jackstimetable.Locations");
             DropIndex("jackstimetable.Schools", new[] { "Location_Id" });
-            DropIndex("jackstimetable.Locations", new[] { "CreatedAt" });
             DropIndex("jackstimetable.Users", new[] { "Location_Id" });
             CreateTable(
                 "jackstimetable.Countries",
