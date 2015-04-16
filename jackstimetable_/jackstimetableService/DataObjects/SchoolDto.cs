@@ -8,8 +8,12 @@ namespace JackstimetableService.DataObjects
     {
         public string Name { get; set; }
 
-        public SchoolTypeDto SchoolType { get; set; }
+        public string SchoolTypeId { get; set; }
+        
+        public virtual SchoolTypeDto SchoolType { get; set; }
 
-        public CityDto City { get; set; }
+        public string CityId { get; set; }
+
+        public virtual CityDto City { get; set; }
     }
 }

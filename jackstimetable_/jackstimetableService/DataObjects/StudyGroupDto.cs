@@ -9,7 +9,9 @@ namespace JackstimetableService.DataObjects
     {
         public string Name { get; set; }
 
-        public SchoolDto School { get; set; }
+        public string SchoolId { get; set; }
+
+        public virtual SchoolDto School { get; set; }
 
         public virtual ICollection<UserDto> Users { get; set; }
     }

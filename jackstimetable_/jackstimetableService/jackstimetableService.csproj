@@ -226,6 +226,10 @@
     <Compile Include="Migrations\201504131852037_Countries and Cities added.Designer.cs">
       <DependentUpon>201504131852037_Countries and Cities added.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201504162107584_relations added.cs" />
+    <Compile Include="Migrations\201504162107584_relations added.Designer.cs">
+      <DependentUpon>201504162107584_relations added.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\JackstimetableContext.cs" />
     <Compile Include="ScheduledJobs\SampleJob.cs" />
@@ -271,6 +275,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201504131852037_Countries and Cities added.resx">
       <DependentUpon>201504131852037_Countries and Cities added.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201504162107584_relations added.resx">
+      <DependentUpon>201504162107584_relations added.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>

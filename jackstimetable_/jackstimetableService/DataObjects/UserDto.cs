@@ -11,7 +11,9 @@ namespace JackstimetableService.DataObjects
 
         public string FullName { get; set; }
 
-        public CityDto City { get; set; }
+        public string CityId { get; set; }
+
+        public virtual CityDto City { get; set; }
 
         public virtual ICollection<StudyGroupDto> StudyGroups { get; set; }
     }
