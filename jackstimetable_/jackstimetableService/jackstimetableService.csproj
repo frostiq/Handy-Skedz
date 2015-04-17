@@ -230,6 +230,10 @@
     <Compile Include="Migrations\201504162107584_relations added.Designer.cs">
       <DependentUpon>201504162107584_relations added.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201504170807261_Cities and Countries changed, Schedule data added.cs" />
+    <Compile Include="Migrations\201504170807261_Cities and Countries changed, Schedule data added.Designer.cs">
+      <DependentUpon>201504170807261_Cities and Countries changed, Schedule data added.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\JackstimetableContext.cs" />
     <Compile Include="ScheduledJobs\SampleJob.cs" />
@@ -239,10 +243,6 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="App_Data\Database1.mdf" />
-    <Content Include="App_Data\Database1_log.ldf">
-      <DependentUpon>Database1.mdf</DependentUpon>
-    </Content>
     <Content Include="Global.asax" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
@@ -278,6 +278,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201504162107584_relations added.resx">
       <DependentUpon>201504162107584_relations added.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201504170807261_Cities and Countries changed, Schedule data added.resx">
+      <DependentUpon>201504170807261_Cities and Countries changed, Schedule data added.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
